@@ -7,6 +7,8 @@
 
 一个命令行工具，允许你通过交互式方式生成符合 [Conventional Commits](https://www.conventionalcommits.org) 规范的 Git 提交消息，并自动进行提交
 
+![commit-x](https://github.com/13OnTheCode/commit-x/blob/main/.github/assets/commit-x.gif)
+
 ## Features
 
 - 友好的交互式界面
