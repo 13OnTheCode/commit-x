@@ -1,0 +1,64 @@
+{
+  "name": "commit-x",
+  "description": "A CLI tool for interactive, Conventional Commits compliant Git commits",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/13OnTheCode/commit-x#readme",
+  "bugs": "https://github.com/13OnTheCode/commit-x/issues",
+  "author": {
+    "name": "13OnTheCode",
+    "email": "13@ryongyon.com",
+    "url": "https://ryongyon.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/13OnTheCode/commit-x.git"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "packageManager": "pnpm@8.6.6",
+  "scripts": {
+    "build": "unbuild",
+    "test": "node ./dist/cli.mjs",
+    "clean": "pnpm dlx rimraf node_modules dist"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.6.3",
+    "colorette": "^2.0.20"
+  },
+  "devDependencies": {
+    "@13onthecode/eslint-config": "^1.1.3",
+    "@types/node": "^20.4.5",
+    "eslint": "^8.45.0",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
+  },
+  "bin": {
+    "commit-x": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "README.md",
+    "README.CN.md"
+  ],
+  "unbuild": {
+    "rollup": {
+      "esbuild": {
+        "target": "esnext",
+        "minify": true
+      }
+    }
+  }
+}
