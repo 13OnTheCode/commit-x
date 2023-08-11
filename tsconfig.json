@@ -1,23 +1,8 @@
 {
-  "include": ["src", "packages"],
-  "exclude": ["node_modules", "build", "dist"],
+  "extends": "@13onthecode/typescript-config/node",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "noEmit": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "strictNullChecks": true,
-    "resolveJsonModule": true,
-    "useDefineForClassFields": true,
-    "noUncheckedIndexedAccess": true,
-    "allowImportingTsExtensions": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext"]
+    "moduleResolution": "bundler"
   }
 }

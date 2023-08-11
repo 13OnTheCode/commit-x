@@ -1,7 +1,1 @@
-import { javascript, node, typescript } from '@13onthecode/eslint-config'
-
-export default [
-  node,
-  javascript,
-  typescript
-]
+export { node as default } from '@13onthecode/eslint-config'
