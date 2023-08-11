@@ -127,7 +127,7 @@ export function formatFilesOutput(
     file: string
     status: string
   }[],
-  colCount: number = 3
+  colCount = 3
 ) {
   let result = ''
   let maxLength = 0
