@@ -47,11 +47,7 @@
     "commit-x": "./dist/cli.mjs"
   },
   "files": [
-    "dist",
-    "LICENSE.md",
-    "CHANGELOG.md",
-    "README.md",
-    "README.CN.md"
+    "dist"
   ],
   "unbuild": {
     "rollup": {
