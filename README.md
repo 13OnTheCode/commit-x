@@ -7,7 +7,7 @@ English | [简体中文](README.CN.md)
 
 a command-line tool that allows you to interactively generate Git commit messages that comply with the [Conventional Commits](https://www.conventionalcommits.org) specification and automatically commit them
 
-![commit-x](https://github.com/13OnTheCode/commit-x/blob/main/.github/assets/commit-x.gif)
+![commit-x](https://github.com/13OnTheCode/commit-x/assets/137921275/e71c8c2d-32ed-41a5-bb41-0f3b5260269f)
 
 ## Features
 
