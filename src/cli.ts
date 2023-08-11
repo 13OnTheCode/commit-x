@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /* eslint-disable perfectionist/sort-objects */
 import { exit } from 'node:process'
 

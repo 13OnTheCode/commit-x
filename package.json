@@ -29,7 +29,7 @@
   "packageManager": "pnpm@8.6.6",
   "scripts": {
     "build": "unbuild",
-    "test": "node ./dist/cli.mjs",
+    "commit-x": "node ./bin/commit-x.mjs",
     "clean": "pnpm dlx rimraf node_modules dist"
   },
   "dependencies": {
@@ -45,12 +45,14 @@
     "unbuild": "^1.2.1"
   },
   "bin": {
-    "commit-x": "./dist/cli.mjs"
+    "commit-x": "./bin/commit-x.mjs"
   },
   "files": [
     "dist"
   ],
   "unbuild": {
+    "entries": ["src/cli"],
+    "outDir": "dist",
     "rollup": {
       "esbuild": {
         "target": "esnext",
