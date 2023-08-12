@@ -26,7 +26,7 @@
   "engines": {
     "node": ">=16"
   },
-  "packageManager": "pnpm@8.6.6",
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
     "build": "unbuild",
     "commit-x": "node ./bin/commit-x.mjs",
@@ -39,8 +39,8 @@
   "devDependencies": {
     "@13onthecode/eslint-config": "^1.1.6",
     "@13onthecode/typescript-config": "^0.0.5",
-    "@types/node": "^20.4.9",
-    "eslint": "^8.46.0",
+    "@types/node": "^20.4.10",
+    "eslint": "^8.47.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1"
   },
@@ -48,10 +48,13 @@
     "commit-x": "./bin/commit-x.mjs"
   },
   "files": [
+    "bin",
     "dist"
   ],
   "unbuild": {
-    "entries": ["src/cli"],
+    "entries": [
+      "src/cli"
+    ],
     "outDir": "dist",
     "rollup": {
       "esbuild": {
