@@ -1,7 +1,7 @@
 {
   "name": "commit-x",
   "description": "A CLI tool for interactive, Conventional Commits compliant Git commits",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/13OnTheCode/commit-x#readme",
