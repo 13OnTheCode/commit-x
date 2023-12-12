@@ -133,8 +133,8 @@ async function commitDataPrompt() {
             return 'Value is required'
           }
 
-          if (value.length > 50) {
-            return `Please make sure it does not exceed 50 characters, currently ${value.length} characters`
+          if (value.length > 80) {
+            return `Please make sure it does not exceed 80 characters, currently ${value.length} characters`
           }
 
           return undefined
